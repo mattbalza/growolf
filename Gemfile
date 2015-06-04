@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -18,6 +16,14 @@ gem 'sass-rails', '>= 3.2'
 
 #Font Awesome
 gem "font-awesome-rails"
+
+# Use sqlite3 for development and test
+# Foreman to access .env file in development phase
+group :development, :test do 
+  gem 'sqlite3'
+  gem 'foreman'
+end
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
