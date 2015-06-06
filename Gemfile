@@ -28,8 +28,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
-#Vider
-gem 'vider', github: 'wazery/vider'
+
 
 #Font Awesome
 gem "font-awesome-rails"
