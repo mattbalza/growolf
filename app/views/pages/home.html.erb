@@ -1,222 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
+<script> <!-- Counterup -->
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> <!-- / Counterup -->
 
-<head>
+<header> <!-- Header -->
+  <%= vider_tag 'assets/wolf', position: '100% 100%', width: '100%', height: '800px', volume: '0' %>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-lead-in"></div>
+      <div class="intro-heading">Don't put dogs<br/> to do a wolf job.</div>
+      <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+    </div>
+  </div>
+</header>
+<section id="services" class="bg-light-gray"> <!-- Services Section -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Services</h2>
+        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x text-highlight"></i>
+          <i class="fa fa-dashboard fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">Marketing Campaigns</h4>
+        <p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+      </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x text-highlight"></i>
+          <i class="fa fa-bullseye fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">CRO & UX Consulting</h4>
+        <p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+      </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x text-highlight"></i>
+          <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">Search Engine Optimization</h4>
+        <p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+      </div>
+    </div>
+    <br/><br/>
+    <div class="row text-center">
+    <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x text-highlight"></i>
+          <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">RWD & Web Development</h4>
+        <p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+      </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x text-highlight"></i>
+          <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">Customer Relationship Management</h4>
+        <p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+      </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x text-highlight"></i>
+          <i class="fa fa-group fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">Social Media Management</h4>
+        <p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+      </div>
+    </div>
+  </div>
+</section>  
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Matteo Balzarini">
-
-    <title>Growolf</title>
-
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-<body id="page-top" class="index">
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Growolf</a>
+<section class="quote" id="portfolio" data-speed="6" data-type="background"> <!-- Portfolio Grid Section -->
+    <div class="container">
+      <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Portfolio</h2>
+        <h3 class="section-subheading">Lorem ipsum dolor sit amet consectetur.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+          </div>
+          <img src="assets/portfolio/roundicons.png" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Round Icons</h4>
+          <p class="text-highlight">Graphic Design</p>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
             </div>
+          </div>
+          <img src="assets/portfolio/startup-framework.png" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Startup Framework</h4>
+          <p class="text-highlight">Website Design</p>
         </div>
-    </header>
-
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
             </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-            </div>
+          </div>
+          <img src="assets/portfolio/treehouse.png" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Treehouse</h4>
+          <p class="text-highlight">Website Design</p>
         </div>
-    </section>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/portfolio/roundicons.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/portfolio/startup-framework.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Startup Framework</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/portfolio/treehouse.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Treehouse</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Golden</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <img src="assets/portfolio/golden.png" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Golden</h4>
+          <p class="text-highlight">Website Design</p>
         </div>
-    </section>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="assets/portfolio/escape.png" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Escape</h4>
+          <p class="text-highlight">Website Design</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="assets/portfolio/dreams.png" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Dreams</h4>
+          <p class="text-highlight">Website Design</p>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about">
+<section id="about" class="bg-light-gray"> <!-- About Section -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -233,11 +196,11 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                    <h4>Dec 2014</h4>
+                                    <h4 class="subheading">We started!</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-timeline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                                 </div>
                             </div>
                         </li>
@@ -247,11 +210,11 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
+                                    <h4>Mar 2015</h4>
+                                    <h4 class="subheading">Small wolves grow!</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-timeline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                                 </div>
                             </div>
                         </li>
@@ -261,11 +224,11 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
+                                    <h4>Jun 2015</h4>
+                                    <h4 class="subheading">UX Consulting started!</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-timeline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                                 </div>
                             </div>
                         </li>
@@ -275,20 +238,20 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                    <h4>July 2015</h4>
+                                    <h4 class="subheading">Expansion</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-timeline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
-                            <div class="timeline-image">
+                            <a href="#contact" class="page-scroll"><div class="timeline-image">
                                 <h4>Be Part
                                     <br>Of Our
                                     <br>Story!</h4>
-                            </div>
+                            </div></a>
                         </li>
                     </ul>
                 </div>
@@ -297,20 +260,20 @@
     </section>
 
     <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
+    <section id="team" class="bg-dark-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
+                    <h2 class="section-heading">Meet the Wolfpack</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="assets/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
+                        <img src="assets/team/1.jpg" width="164" height="164" class="img-responsive img-circle" alt="">
+                        <h4>Matteo Balzarini</h4>
+                        <p class="text-muted">Co-Founder<br/> Digital Marketer</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -323,9 +286,9 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="assets/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
+                        <img src="assets/team/2.jpg" width="164" height="164" class="img-responsive img-circle" alt="">
+                        <h4>Daniele Peron</h4>
+                        <p class="text-muted">Co-Founder<br/>Copywriter & Conversion Expert</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -338,9 +301,56 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="assets/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
+                        <img src="assets/team/6.jpg" width="164" height="164" class="img-responsive img-circle" alt="">
+                        <h4>Vishal Phrabu</h4>
+                        <p class="text-muted">Wonder Designer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="assets/team/3.jpg" width="164" height="164" class="img-responsive img-circle" alt="">
+                        <h4>Filippo Jatta</h4>
+                        <p class="text-muted">SEO Ninja</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="assets/team/4.jpg" width="164" height="164" class="img-responsive img-circle" alt="">
+                        <h4>Pit Luo</h4>
+                        <p class="text-muted">Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="assets/team/5.jpg" width="164" height="164" class="img-responsive img-circle" alt="">
+                        <h4>Julia Orlenko</h4>
+                        <p class="text-muted">Social Media Queen</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -354,42 +364,65 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                    <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Clients Aside -->
-    <aside class="clients">
+<section id="numbers" class="fun-facts bg-light-gray" data-speed="6" data-type="background"> 
+  <div class="container">           
+    <div class="row">
+      <div class="col-md-3 margin20 facts-in text-highlight">
+        <h3><span class="counter text-primary">37</span> +</h3>
+        <h4>Clients</h4>
+      </div><!--facts in-->
+      <div class="col-md-3 margin20 facts-in text-highlight">
+        <h3><span class="counter text-primary">87</span></h3>
+        <h4>Designs</h4>
+      </div><!--facts in-->
+      <div class="col-md-3 margin20 facts-in text-highlight">
+        <h3><span class="counter text-primary">3423</span> +</h3>
+        <h4>Emails </h4>
+      </div><!--facts in-->
+      <div class="col-md-3 margin20 facts-in text-highlight">
+        <h3><span class="counter text-primary">3578</span></h3>
+        <h4>Coffees</h4>
+      </div><!--facts in-->
+    </div>
+  </div> <!-- /.container -->
+</section>
+
+    <!-- Clients Aside 
+    <aside class="clients" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="assets/logos/envato.jpg" class="img-responsive img-centered" alt="">
+                        <img src="assets/logos/a.jpg" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="assets/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+                        <img src="assets/logos/b.jpg" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="assets/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                        <img src="assets/logos/c.jpg" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="assets/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                        <img src="assets/logos/d.jpg" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
             </div>
         </div>
-    </aside>
+    </aside> -->
     
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="bg-dark-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -433,37 +466,8 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2014</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
-
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -630,6 +634,30 @@
             </div>
         </div>
     </div>
+    <!-- Parallax function -->
+<script>
+$(document).ready(function(){
+   // cache the window object
+   $window = $(window);
+ 
+   $('section[data-type="background"]').each(function(){
+     // declare the variable to affect the defined data-type
+     var $scroll = $(this);
+                     
+      $(window).scroll(function() {
+        // HTML5 proves useful for helping with creating JS functions!
+        // also, negative value because we're scrolling upwards                             
+        var yPos = -($window.scrollTop() / $scroll.data('speed')); 
+         
+        // background position
+        var coords = '50% '+ yPos + 'px';
+ 
+        // move the background
+        $scroll.css({ backgroundPosition: coords });    
+      }); // end window scroll
+   });  // end section function
+}); // close out script
+</script>   
 </body>
 
 </html>
